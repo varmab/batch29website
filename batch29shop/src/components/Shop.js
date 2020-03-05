@@ -96,6 +96,7 @@ class Shop extends Component{
     }
 
     render(){
+        console.log("Shop rendering..")
         return(
             <div className="row">
                 <h1>Shop</h1>

@@ -1,4 +1,7 @@
 import React, {Component, Fragment} from 'react'
+import {
+    Link
+} from 'react-router-dom'
 
 class Item extends Component{
     constructor(props){
@@ -19,9 +22,11 @@ class Item extends Component{
     }
 
     render(){
+        console.log("Item rendering..")
+        var itemLink=`/items/${this.state.item.id}`
         return(
             <Fragment>
-                <h1>{this.state.item.name}</h1>
+                <h1><Link to={itemLink}>{this.state.item.name}</Link></h1>
                 <p>Price: {this.state.item.price}</p>
                 {
                     (this.state.isCart==true)?

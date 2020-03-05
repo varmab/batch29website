@@ -22,6 +22,7 @@ class Cart extends Component{
     }
 
     render(){
+        console.log("Cart rendering..")
         return(
             <React.Fragment>
                 <h1>Cart</h1>

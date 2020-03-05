@@ -16,6 +16,7 @@ class Checkout extends Component{
     }
 
     render(){
+        console.log("Checkout rendering..")
         return(
             <React.Fragment>
                 <h1>Checkout</h1>
